@@ -10,14 +10,14 @@
   </test>
 
 
- <!-- <test name="Accounts Page Test" >
+  <test name="Accounts Page Test" >
     <classes>
        <class name="com.qa.opencart.tests.AccountsPageTest" />
     </classes>
-  </test>-->
+  </test>
   
   
- <!-- <test name="Register Page Test" >
+  <test name="Register Page Test" >
     <classes>
        <class name="com.qa.opencart.tests.RegisterPageTest" />
     </classes>
@@ -29,6 +29,6 @@
        <class name="com.qa.opencart.tests.ProductInfoPageTest" />
     </classes>
   </test>
-  -->
+  
  
 </suite>
