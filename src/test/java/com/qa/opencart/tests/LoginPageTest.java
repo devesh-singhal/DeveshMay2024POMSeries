@@ -45,7 +45,7 @@ public void forgotPwdLinkExistTest() {
 	@Test
 	public void loginTest() {
 		try {
-			AccountsPage accountPageTitle = loginPage.doLogin(prop.getProperty("username"), System.getProperty("password"));
+			AccountsPage accountPageTitle = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
