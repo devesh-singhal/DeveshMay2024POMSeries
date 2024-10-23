@@ -3,10 +3,10 @@ package com.qa.opencart.base;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.asserts.SoftAssert;
-
 import com.qa.opencart.exceptions.BrowserException;
 import com.qa.opencart.factory.DriverFactory;
 import com.qa.opencart.pages.AccountsPage;
@@ -20,7 +20,9 @@ import com.qa.opencart.pages.ResultsPage;
 
 public class BaseTest {
 	WebDriver driver ;
+	
 	DriverFactory df ; 
+	
 	protected LoginPage loginPage;
 	protected AccountsPage accPage;
 	protected Properties prop;
@@ -30,16 +32,21 @@ public class BaseTest {
 	protected SoftAssert softAssert;
 	
 	
+	
 	@BeforeTest	
 	public void setUp() throws RunTimeException {
 		
 		df = new DriverFactory() ;
 	 prop = df.initProperties();
+
 			
 	try {
 		driver = df.initDriver(prop);
+		//driver1 = df.init_
+		
+
 	} catch (Exception e) {
-		// TODO Auto-generated catch block
+		
 		e.printStackTrace();
 	}
 	
@@ -53,10 +60,10 @@ public class BaseTest {
 		
 	}
 
-	 @AfterTest
-	public void tearDown(  ) {
-		driver.quit();
-	 }
+//	 @AfterTest
+//	public void tearDown() {
+//		driver.quit();
+//	 }
 	
 		
 	 

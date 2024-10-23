@@ -10,7 +10,7 @@ import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.utils.ElementUtil;
 
 public class LoginPage {
-	private WebDriver driver ;
+	public static WebDriver driver ;
 	private ElementUtil eleUtil;
 	
 	//1. private By locators : page objects
@@ -27,6 +27,7 @@ public class LoginPage {
 	//2. Public page constructors:
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
+
 		eleUtil = new ElementUtil (driver);
 		
 	}

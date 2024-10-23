@@ -33,8 +33,8 @@ public class LoginPageTest extends BaseTest {
 	@Test
 	
 public void forgotPwdLinkExistTest() {
-		Assert.assertTrue (loginPage.isForgotPwdLinkExist() );
-	}
+Assert.assertTrue (loginPage.isForgotPwdLinkExist() );
+	 }
 	
 	@Test
 	public void logoExistTest() {
